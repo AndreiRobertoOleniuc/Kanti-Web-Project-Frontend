@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+
 export default function Questions() {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -10,7 +12,9 @@ export default function Questions() {
   return (
     <div>
       {data.map((question) => (
-        <p key={question.id}>{question.question}</p>
+        <h1 key={question.id}>
+          <Link to={`/Questions/${question.id}`}>{question.question}</Link>
+        </h1>
       ))}
     </div>
   );
