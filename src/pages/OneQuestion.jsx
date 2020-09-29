@@ -1,16 +1,22 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 
-export default function OneQuestion() {
-  const [question, setQuestion] = useState({});
+export default function OneQuestion({ match }) {
   useEffect(() => {
-    axios.get("http://localhost:8080/getQuestionID?id=1").then((data) => {
-      console.log(data.data);
-    });
+    fetchItem();
   }, []);
+  const [item, setItem] = useState({});
+  const fetchItem = async () => {
+    const fetchItem = await fetch(
+      `http://localhost:8080/getQuestionID?id=${match.params.id}`
+    );
+    const item = await fetchItem.json();
+    setItem(item);
+    console.log(item);
+  };
   return (
     <div>
-      <h1>Question</h1>
+      <h2>{item.id}</h2>
+      <h2>{item.question}</h2>
     </div>
   );
 }

@@ -7,6 +7,7 @@ export default function Questions() {
   useEffect(() => {
     axios.get("http://localhost:8080/getAllQuestion").then((data) => {
       setData(data.data);
+      console.log(data);
     });
   }, []);
   return (
