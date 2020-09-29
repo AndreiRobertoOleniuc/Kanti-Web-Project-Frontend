@@ -12,7 +12,6 @@ import NotFoundPage from "./pages/404";
 import About from "./pages/About";
 import Quesiton from "./pages/Questions";
 import OneQuestion from "./pages/OneQuestion";
-import axios from "axios";
 
 function App() {
   return (

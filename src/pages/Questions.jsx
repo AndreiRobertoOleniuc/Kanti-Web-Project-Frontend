@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 
-export default function Questions() {
-  const [data, setData] = useState([]);
+function Questions() {
   useEffect(() => {
-    axios.get("http://localhost:8080/getAllQuestion").then((data) => {
-      setData(data.data);
-      console.log(data);
-    });
+    fetchData();
+    console.log("Hello");
   }, []);
+  const [data, setData] = useState([]);
+  const fetchData = async () => {
+    const fetchData = await fetch("http://localhost:8080/getAllQuestion");
+    const questions = await fetchData.json();
+    setData(questions);
+  };
   return (
     <div>
       {data.map((question) => (
@@ -20,3 +22,4 @@ export default function Questions() {
     </div>
   );
 }
+export default Questions;
