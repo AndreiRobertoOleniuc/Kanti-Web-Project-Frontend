@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function OneQuestion({ match }) {
+function OneQuestion({ match }) {
   useEffect(() => {
     fetchItem();
   }, []);
@@ -20,3 +20,5 @@ export default function OneQuestion({ match }) {
     </div>
   );
 }
+
+export default OneQuestion;
