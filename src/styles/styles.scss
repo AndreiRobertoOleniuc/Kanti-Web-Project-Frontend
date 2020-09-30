@@ -1,0 +1,24 @@
+$navBgColor: grey;
+$textColor: white;
+$buttonColor: rgb(196, 195, 195);
+$bgColor: rgb(94, 90, 90);
+$font: "Titillium Web";
+.App {
+  text-align: center;
+  button {
+    background-color: $buttonColor;
+    border-style: none;
+    width: 0.25vh;
+    height: 0.5vh;
+  }
+}
+@import "./navbar";
+
+body {
+  background-color: $bgColor;
+  color: $textColor;
+  font-family: $font;
+  a {
+    color: $textColor;
+  }
+}

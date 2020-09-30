@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.App button {
+  background-color: #c4c3c3;
+  border-style: none;
+  width: 0.25vh;
+  height: 0.5vh;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  background-color: grey;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background-color: #5e5a5a;
+  color: white;
+  font-family: "Titillium Web";
+}
+
+body a {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

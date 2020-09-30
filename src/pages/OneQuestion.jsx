@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function OneQuestion({ match }) {
   useEffect(() => {
     fetchItem();
+    console.log(match);
   }, []);
   const [item, setItem] = useState({});
   const fetchItem = async () => {
