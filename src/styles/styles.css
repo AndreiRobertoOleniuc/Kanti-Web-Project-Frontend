@@ -3,10 +3,16 @@
 }
 
 .App button {
-  background-color: #c4c3c3;
+  background-color: white;
   border-style: none;
-  width: 0.25vh;
-  height: 0.5vh;
+  border-radius: 2px;
+  width: auto;
+  height: auto;
+  font-size: medium;
+}
+
+.App button:hover {
+  background-color: white;
 }
 
 nav {
@@ -19,7 +25,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   min-height: 10vh;
-  background-color: grey;
+  background-color: #141414;
   color: white;
 }
 
@@ -37,7 +43,7 @@ nav {
 }
 
 body {
-  background-color: #5e5a5a;
+  background-color: #555353;
   color: white;
   font-family: "Titillium Web";
 }
