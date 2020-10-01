@@ -16,7 +16,7 @@ function Questions() {
     <div>
       {data.map((question) => (
         <h1 key={question.id}>
-          <Link to={`/Questions/${question.id}`}>{question.question}</Link>
+          <Link to={`/QuestionStatic/${question.id}`}>{question.question}</Link>
         </h1>
       ))}
     </div>

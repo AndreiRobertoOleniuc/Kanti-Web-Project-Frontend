@@ -13,8 +13,11 @@ export default function NavBar() {
         <Link style={navStyle} to="/">
           <li>Home</li>
         </Link>
-        <Link style={navStyle} to="/Questions">
-          <li>Question</li>
+        <Link style={navStyle} to="/Questions/1">
+          <li>IMS EignungsTest</li>
+        </Link>
+        <Link style={navStyle} to="/QuestionStatic">
+          <li>Question Static</li>
         </Link>
         <Link style={navStyle} to="/About">
           <li>About</li>
