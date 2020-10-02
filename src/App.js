@@ -9,7 +9,7 @@ import {
 
 //Styles and Bootstap
 import "./styles/styles.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap/dist/css/bootstrap.min.css";
 
 //Components Imports
 import NavBar from "./components/Navbar";

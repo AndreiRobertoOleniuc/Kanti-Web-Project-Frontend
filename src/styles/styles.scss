@@ -4,9 +4,16 @@ $buttonColor: rgb(255, 255, 255);
 $bgColor: rgb(85, 83, 83);
 $font: "Titillium Web";
 .App {
+  background-color: $bgColor;
   text-align: center;
   button {
     background-color: $buttonColor;
+    background-color: $bgColor;
+    color: $textColor;
+    font-family: $font;
+    a {
+      color: $textColor;
+    }
     border-style: none;
     border-radius: 2px;
     width: auto;
@@ -18,12 +25,3 @@ $font: "Titillium Web";
   }
 }
 @import "./navbar";
-
-body {
-  background-color: $bgColor;
-  color: $textColor;
-  font-family: $font;
-  a {
-    color: $textColor;
-  }
-}
