@@ -1,11 +1,17 @@
+//React Imports
 import React, { useState, useEffect } from "react";
-import "./styles/styles.css";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
+
+//Styles and Bootstap
+import "./styles/styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+//Components Imports
 import NavBar from "./components/Navbar";
 import Home from "./pages/website/Home";
 import NotFoundPage from "./pages/error/404";
@@ -14,6 +20,7 @@ import Quesiton from "./pages/questions/Questions";
 import OneQuestion from "./pages/questions/OneQuestion";
 import Question from "./pages/questions/Question";
 import Ausgabe from "./pages/questions/Ausgabe";
+import Form from "./pages/website/Form";
 
 function App() {
   useEffect(() => {
