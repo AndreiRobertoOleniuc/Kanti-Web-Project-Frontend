@@ -24,6 +24,9 @@ export default function Question({
   function add1() {
     setAuswahl([...auswahl, { zahl: 1 }]);
   }
+  function add0() {
+    setAuswahl([...auswahl, { zahl: 0 }]);
+  }
   return (
     <div>
       <h1>{name}</h1>
@@ -31,13 +34,16 @@ export default function Question({
         <button onClick={add4}>Trifft zu</button>
       </Link>
       <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
-        <button onClick={add3}>Manchmal</button>
+        <button onClick={add3}>Oft</button>
       </Link>
       <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
-        <button onClick={add2}>Selten</button>
+        <button onClick={add2}>Manchmal</button>
       </Link>
       <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
-        <button onClick={add1}>Trifft gar nicht zu</button>
+        <button onClick={add1}>Selten</button>
+      </Link>
+      <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
+        <button onClick={add0}>Nie</button>
       </Link>
     </div>
   );

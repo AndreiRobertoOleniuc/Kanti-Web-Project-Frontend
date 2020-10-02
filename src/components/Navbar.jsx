@@ -5,17 +5,17 @@ export default function NavBar() {
   return (
     <nav>
       <h2>Kanti Web Project</h2>
-      <ul className="nav-links">
-        <Link className="link" to="/">
+      <ul>
+        <Link to="/">
           <li>Home</li>
         </Link>
-        <Link className="link" to="/Questions/1">
+        <Link to="/Questions/1">
           <li>IMS EignungsTest</li>
         </Link>
-        <Link className="link" to="/QuestionStatic">
+        <Link to="/QuestionStatic">
           <li>Question Static</li>
         </Link>
-        <Link className="link" to="/About">
+        <Link to="/About">
           <li>About</li>
         </Link>
       </ul>
