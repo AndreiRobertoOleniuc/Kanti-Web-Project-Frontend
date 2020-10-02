@@ -1,25 +1,21 @@
 import React from "react";
-import "../styles/styles.css";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
-  const navStyle = {
-    color: "white",
-  };
   return (
     <nav>
       <h2>Kanti Web Project</h2>
       <ul className="nav-links">
-        <Link style={navStyle} to="/">
+        <Link className="link" to="/">
           <li>Home</li>
         </Link>
-        <Link style={navStyle} to="/Questions/1">
+        <Link className="link" to="/Questions/1">
           <li>IMS EignungsTest</li>
         </Link>
-        <Link style={navStyle} to="/QuestionStatic">
+        <Link className="link" to="/QuestionStatic">
           <li>Question Static</li>
         </Link>
-        <Link style={navStyle} to="/About">
+        <Link className="link" to="/About">
           <li>About</li>
         </Link>
       </ul>

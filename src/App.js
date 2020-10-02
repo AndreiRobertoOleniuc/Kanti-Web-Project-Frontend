@@ -7,13 +7,13 @@ import {
   Redirect,
 } from "react-router-dom";
 import NavBar from "./components/Navbar";
-import Home from "./pages/Home";
-import NotFoundPage from "./pages/404";
-import About from "./pages/About";
-import Quesiton from "./pages/Questions";
-import OneQuestion from "./pages/OneQuestion";
-import Question from "./components/Question";
-import Ausgabe from "./pages/Ausgabe";
+import Home from "./pages/website/Home";
+import NotFoundPage from "./pages/error/404";
+import About from "./pages/website/About";
+import Quesiton from "./pages/questions/Questions";
+import OneQuestion from "./pages/questions/OneQuestion";
+import Question from "./pages/questions/Question";
+import Ausgabe from "./pages/questions/Ausgabe";
 
 function App() {
   useEffect(() => {
