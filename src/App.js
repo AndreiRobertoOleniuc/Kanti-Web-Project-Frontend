@@ -38,7 +38,10 @@ function App() {
       <div className="App">
         <NavBar />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/">
+            <Form />
+          </Route>
+          <Route exact path="/Home" component={Home} />
           <Route exact path="/About" component={About} />
           <Route exact path="/QuestionStatic" component={Quesiton} />
           <Route path="/QuestionStatic/:id" component={OneQuestion} />

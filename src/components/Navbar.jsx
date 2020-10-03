@@ -6,7 +6,7 @@ export default function NavBar() {
     <nav>
       <h2>Kanti Web Project</h2>
       <ul>
-        <Link to="/">
+        <Link to="/Home">
           <li>Home</li>
         </Link>
         <Link to="/Questions/1">
