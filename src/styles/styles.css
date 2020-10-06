@@ -20,6 +20,31 @@ nav li:hover {
   background-color: #2e2d2d;
 }
 
+.questionSelector {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.questionSelector li {
+  float: left;
+  margin-right: 15px;
+}
+
+.questionSelector li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.questionSelector li a:hover {
+  background-color: #111111;
+}
+
 .App {
   text-align: center;
 }
