@@ -26,23 +26,28 @@ function LoginPage() {
   };
 
   return (
-    <div className="centerContent">
+    <div className="userdata">
       <p>
         Geben sie bitte Ihre Benutzerdaten ein um den EignungsTest durch zu
         führen
       </p>
+      <br />
       <input
         type="text"
-        className="input"
         placeholder="Nachname"
+        required
+        autoComplete="off"
         onChange={changeName}
       />
+      <br />
       <input
         type="text"
-        className="input"
         placeholder="Vorname"
+        required
+        autoComplete="off"
         onChange={changeVorname}
       />
+      <br />
       <button onClick={login}>Test Starten</button>
     </div>
   );

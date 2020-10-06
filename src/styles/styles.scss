@@ -1,21 +1,21 @@
-$navBgColor: rgb(151, 151, 151);
-$textColor: rgb(0, 0, 0);
-$buttonColor: rgb(189, 189, 189);
-$bgColor: rgb(248, 248, 248);
-$font: "Times New Roman";
+$font: "Montserrat", sans-serif;
+$bgColor: #24252a;
+$hoverColor: #0088a9;
+$textColor: #edf0f1;
 
 @import "./navbar";
-//@import "./horizontalList";
+@import "./form";
+@import "./questions";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252a;
-  font-family: "Montserrat", sans-serif;
+  background-color: $bgColor;
+  font-family: $font;
   font-weight: 500;
-  color: #edf0f1;
+  color: $textColor;
 }
 
 .centerContent {
@@ -23,8 +23,6 @@ $font: "Times New Roman";
   flex-direction: column;
   align-items: center;
 }
-
-
 
 .staticQuestions {
   display: flex;
@@ -35,8 +33,7 @@ $font: "Times New Roman";
     text-decoration: none;
     transition: all 0.3s ease 0s;
     &:hover {
-      color: #0088a9;
+      background-color: rgba(0, 136, 169, 0.8);
     }
   }
 }
-
