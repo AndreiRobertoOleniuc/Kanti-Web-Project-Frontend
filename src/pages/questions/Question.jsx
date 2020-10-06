@@ -86,23 +86,26 @@ export default function Question({
     );
   }
   return (
-    <div>
-      <h1>{name}</h1>
-      <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
-        <button onClick={add4}>Trifft zu</button>
-      </Link>
-      <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
-        <button onClick={add3}>Oft</button>
-      </Link>
-      <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
-        <button onClick={add2}>Manchmal</button>
-      </Link>
-      <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
-        <button onClick={add1}>Selten</button>
-      </Link>
-      <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
-        <button onClick={add0}>Nie</button>
-      </Link>
+    <div className="question">
+      <p>{name}</p>
+      <br />
+      <div className="choices">
+        <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
+          <button onClick={add4}>Trifft zu</button>
+        </Link>
+        <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
+          <button onClick={add3}>Oft</button>
+        </Link>
+        <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
+          <button onClick={add2}>Manchmal</button>
+        </Link>
+        <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
+          <button onClick={add1}>Selten</button>
+        </Link>
+        <Link to={lastPage === "true" ? "/Ausgabe" : `/Questions/${nextPage}`}>
+          <button onClick={add0}>Nie</button>
+        </Link>
+      </div>
       <br />
       <ul className="questionSelector">
         {data.map((questions) => (

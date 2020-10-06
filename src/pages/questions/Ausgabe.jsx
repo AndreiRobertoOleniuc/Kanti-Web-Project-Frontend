@@ -26,7 +26,7 @@ export default function Ausgabe({ auswahl, setAuswahl, initial }) {
     setAuswahl(initial);
   };
   return (
-    <div>
+    <div className="centerContent">
       <h1>Ausgabe</h1>
       <h3>Sie passen zu {res}% der IMS</h3>
     </div>
