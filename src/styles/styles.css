@@ -1,84 +1,109 @@
-nav {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 10vh;
-  background-color: #5e5e5e;
-  color: #fffbfb;
+  padding: 30px 10%;
 }
 
-nav li {
-  color: #fffbfb;
+header li,
+header a,
+header button,
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
 }
 
-nav li:hover {
-  background-color: #2e2d2d;
+header .websiteName {
+  cursor: pointer;
 }
 
-.questionSelector {
-  list-style-type: none;
+header .nav__links {
+  list-style: none;
+}
+
+header .nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+header .nav__links li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header .nav__links li a:hover {
+  color: #0088a9;
+}
+
+header button {
+  padding: 9px 25px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333333;
+  background-color: #24252a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
 }
 
-.questionSelector li {
-  float: left;
-  margin-right: 15px;
+.centerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.questionSelector li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
+.staticQuestions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+}
+
+.staticQuestions a {
   text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.questionSelector li a:hover {
-  background-color: #111111;
-}
-
-.App {
-  text-align: center;
-}
-
-.App button {
-  background-color: #080808;
-  color: #fffbfb;
-  border-style: none;
-  border-radius: 2px;
-  width: auto;
-  height: auto;
-  font-size: medium;
-}
-
-.App button:hover {
-  background-color: #636060;
-}
-
-body {
-  background-color: #383838;
-  color: #fffbfb;
-  font-family: "Times New Roman";
-}
-
-body a {
-  text-decoration: none;
-  color: #fffbfb;
-}
-
-body a:hover {
-  background-color: #636060;
-}
-
-body ul {
-  list-style: none;
+.staticQuestions a:hover {
+  color: #0088a9;
 }
 /*# sourceMappingURL=styles.css.map */

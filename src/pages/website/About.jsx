@@ -2,12 +2,13 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
+    <div className="centerContent">
       <h1>Kanti Web Project</h1>
+      <br />
       <p>
-        Unsere IDPA Gruppe(Noah Grand,Shenia Scherer, Andrei Oleniuc) <br></br>
-        werden einen Eignungstest erstellen welcher für Bezirk und Sekundar
-        Schüler ist
+        Unsere IDPA Gruppe(Noah Grand,Shenia Scherer, Andrei Oleniuc) werden
+        <br></br>
+        einen Eignungstest erstellen welcher für Bezirk und Sekundar Schüler ist
       </p>
     </div>
   );

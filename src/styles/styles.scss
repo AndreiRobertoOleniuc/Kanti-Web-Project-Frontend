@@ -1,40 +1,42 @@
-$navBgColor: rgb(94, 94, 94);
-$textColor: rgb(255, 251, 251);
-$buttonColor: rgb(8, 8, 8);
-$bgColor: rgb(56, 56, 56);
+$navBgColor: rgb(151, 151, 151);
+$textColor: rgb(0, 0, 0);
+$buttonColor: rgb(189, 189, 189);
+$bgColor: rgb(248, 248, 248);
 $font: "Times New Roman";
 
 @import "./navbar";
-@import "./horizontalList";
+//@import "./horizontalList";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-.App {
-  text-align: center;
-  button {
-    background-color: $buttonColor;
-    color: $textColor;
-    border-style: none;
-    border-radius: 2px;
-    width: auto;
-    height: auto;
-    font-size: medium;
-    &:hover {
-      background-color: rgb(99, 96, 96);
-    }
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
 }
 
-body {
-  background-color: $bgColor;
-  color: $textColor;
-  font-family: $font;
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.staticQuestions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
   a {
     text-decoration: none;
-    color: $textColor;
+    transition: all 0.3s ease 0s;
     &:hover {
-      background-color: rgb(99, 96, 96);
+      color: #0088a9;
     }
   }
-  ul {
-    list-style: none;
-  }
 }
+

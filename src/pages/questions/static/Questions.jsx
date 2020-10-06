@@ -13,11 +13,11 @@ function Questions() {
     setData(questions);
   };
   return (
-    <div>
+    <div className="staticQuestions">
       {data.map((question) => (
-        <h1 key={question.id}>
+        <p key={question.id}>
           <Link to={`/QuestionStatic/${question.id}`}>{question.question}</Link>
-        </h1>
+        </p>
       ))}
     </div>
   );

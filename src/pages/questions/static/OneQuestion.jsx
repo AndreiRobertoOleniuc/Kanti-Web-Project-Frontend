@@ -15,7 +15,7 @@ function OneQuestion({ match }) {
     console.log(item);
   };
   return (
-    <div>
+    <div className="centerContent">
       <h2>{item.id}</h2>
       <h2>{item.question}</h2>
     </div>

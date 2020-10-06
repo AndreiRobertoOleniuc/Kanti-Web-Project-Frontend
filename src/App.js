@@ -10,6 +10,7 @@ import {
 //Styles and Bootstap
 import "./styles/styles.css";
 //import "bootstrap/dist/css/bootstrap.min.css";
+//import "./design.css";
 
 //Components Imports
 import NavBar from "./components/Navbar";
@@ -20,7 +21,6 @@ import Quesiton from "./pages/questions/static/Questions";
 import OneQuestion from "./pages/questions/static/OneQuestion";
 import Question from "./pages/questions/Question";
 import Ausgabe from "./pages/questions/Ausgabe";
-import Form from "./pages/website/Form";
 import LoginPage from "./auth/LoginPage";
 import PrivateRoute from "./auth/PrivateRoute";
 
@@ -44,11 +44,12 @@ function App() {
   };
   return (
     <Router>
-      <div className="App">
+      <div className="parent">
         <NavBar />
+        <br />
         <Switch>
           <Route exact path="/">
-            <Form />
+            <Home />
           </Route>
           <Route exact path="/Home" component={Home} />
           <Route exact path="/About" component={About} />
