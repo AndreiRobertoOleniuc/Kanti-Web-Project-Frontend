@@ -29,6 +29,10 @@ function App() {
   const [data, setData] = useState([]);
   const [auswahl, setAuswahl] = useState(initial);
 
+  setInterval(function () {
+    console.log(window.location.pathname + window.location.search);
+  }, 60 * 100);
+
   useEffect(() => {
     fetchData();
   }, []);
