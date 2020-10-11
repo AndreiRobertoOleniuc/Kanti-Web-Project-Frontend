@@ -6,6 +6,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import Axios from "axios";
 
 //Styles and Bootstap
 import "./styles/styles.css";
@@ -29,13 +30,22 @@ function App() {
   const [data, setData] = useState([]);
   const [auswahl, setAuswahl] = useState(initial);
 
-  setInterval(function () {
-    console.log(window.location.pathname + window.location.search);
-  }, 60 * 100);
-
   useEffect(() => {
     fetchData();
+    Axios.post("http://localhost:8080/satusUpdate", {
+      userId: 1,
+      status: 1,
+      path: window.location.pathname + window.location.search,
+    })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    console.log("Post DATA");
   }, []);
+
   const fetchData = async () => {
     const fetchData = await fetch("http://localhost:8080/getAllQuestion");
     const questions = await fetchData.json();
