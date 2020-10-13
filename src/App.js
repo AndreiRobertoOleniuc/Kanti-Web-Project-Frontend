@@ -11,7 +11,6 @@ import Axios from "axios";
 //Styles and Bootstap
 import "./styles/styles.css";
 //import "bootstrap/dist/css/bootstrap.min.css";
-//import "./design.css";
 
 //Components Imports
 import NavBar from "./components/Navbar";
@@ -32,13 +31,12 @@ function App() {
 
   useEffect(() => {
     fetchData();
-    Axios.post("http://localhost:8080/satusUpdate", {
-      userId: 1,
-      status: 1,
-      path: window.location.pathname + window.location.search,
+    Axios.post("http://localhost:8080/addVisit", {
+      id: 1,
+      add: 1,
     })
       .then((response) => {
-        console.log(response);
+        console.log(response.data);
       })
       .catch((error) => {
         console.log(error);
